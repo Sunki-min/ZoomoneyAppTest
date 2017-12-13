@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="puzzle.zoomoneyapptest.SignUpActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/et_id_sign_up"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="전화번호를 입력해주세요."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/et_pw_sign_up"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력해주세요 (최소 8자리)"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            />
+
+        <EditText
+            android:id="@+id/et_email_sign_up"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="이메일을 입력해주세요"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_check_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정 만들기"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
