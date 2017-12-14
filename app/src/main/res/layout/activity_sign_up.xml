@@ -26,7 +26,7 @@
             android:id="@+id/et_id_sign_up"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:hint="전화번호를 입력해주세요."
+            android:hint="전화번호를 입력해주세요"
             />
     </LinearLayout>
 
@@ -49,6 +49,7 @@
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:hint="비밀번호를 입력해주세요 (최소 8자리)"
+            android:inputType="textPassword"
             />
 
     </LinearLayout>

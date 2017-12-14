@@ -11,9 +11,9 @@ public class Data implements Serializable{
     public String id;
     public String pw;
 
-    public Data(String id, String pw){
-        this.id = id;
-        this.pw = pw;
+    public Data(String account){
+        this.id = account;
+        this.pw = account;
     }
 
 }
