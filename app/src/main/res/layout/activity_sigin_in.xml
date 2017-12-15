@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="puzzle.zoomoneyapptest.SiginInActivity">
+    tools:context="puzzle.zoomoneyapptest.SignInActivity"
+    >
 
     <ImageView
         android:layout_width="290dp"
@@ -19,7 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <EditText
             android:id="@+id/et_id_sign_in"
@@ -41,6 +43,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:hint="비밀번호"
+            android:inputType="text"
             android:password="true"
             android:maxLength="15"
             android:lines="1"
@@ -52,7 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <Button
             android:id="@+id/check_sign_in"

@@ -22,15 +22,15 @@ public class AccountActivity extends AppCompatActivity {
         TextView tv_account = (TextView)findViewById(R.id.tv_account);
 
         Intent intent = getIntent();
-        Data data_id = (Data) intent.getSerializableExtra("id");
+        Data data_id = (Data) intent.getSerializableExtra("ID");
 
-        tv_account.setText(""+ data_id.id);
+        tv_account.setText(""+ data_id.input_first);
 
         Button btn_check_account = (Button)findViewById(R.id.btn_check_account);
         btn_check_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent go_to_signIn = new Intent(AccountActivity.this, SiginInActivity.class);
+                Intent go_to_signIn = new Intent(AccountActivity.this, SignInActivity.class);
                 startActivity(go_to_signIn);
             }
         });
