@@ -28,6 +28,7 @@
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:hint="전화번호를 입력해주세요"
+            android:inputType="number"
             />
     </LinearLayout>
 
