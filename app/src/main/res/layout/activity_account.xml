@@ -6,14 +6,25 @@
     android:layout_height="match_parent"
     tools:context="puzzle.zoomoneyapptest.AccountActivity"
     android:orientation="vertical"
+    android:background="@drawable/bg_pink"
     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="@dimen/textsize_xxxxl"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_l"
+        android:layout_marginLeft="@dimen/margin_l"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/margin_xxxs"
+        android:layout_marginLeft="@dimen/margin_l"
         >
 
         <TextView
@@ -21,18 +32,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="32dp"
-            android:textColor="#000"
+            android:textColor="@color/pink1"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="님"
-            android:textColor="#000"
+            android:text="님,"
+            android:textColor="@color/black"
             android:textSize="17dp"
             android:layout_marginLeft="4dp"
             />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저금 하시네요."
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_xxxxl"
+        android:layout_marginLeft="@dimen/margin_l"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,37 +69,6 @@
             />
 
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="4dp"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="사용 내역"
-            android:textSize="15dp"
-            android:textColor="#000"
-            />
-
-        <ScrollView
-            android:id="@+id/scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            >
-
-            <TextView
-                android:id="@+id/tv_place"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-
-        </ScrollView>
     </LinearLayout>
 
 

@@ -9,11 +9,21 @@
     >
 
     <ImageView
-        android:layout_width="290dp"
-        android:layout_height="290dp"
+        android:layout_width="141.5dp"
+        android:layout_height="131.5dp"
         android:layout_gravity="center"
         android:src="@drawable/puzzles"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="117dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZOOMONEY"
+        android:textColor="#3a3a3a"
+        android:textSize="22.5sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
         />
 
     <LinearLayout
@@ -21,15 +31,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
+        android:layout_marginTop="63dp"
         >
 
         <EditText
             android:id="@+id/et_id_sign_in"
-            android:layout_width="220dp"
+            android:layout_width="354.5dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="23dp"
-            android:hint="전화번호"
+            android:textSize="19sp"
+            android:hint="phone number"
+            android:textColorHint="#808285"
+            android:textCursorDrawable="@null"
             android:maxLength="11"
             android:inputType="number"
             android:lines="1"
@@ -37,12 +50,13 @@
 
         <EditText
             android:id="@+id/et_pw_sign_in"
-            android:layout_width="220dp"
+            android:layout_width="354.5dp"
             android:layout_height="wrap_content"
-            android:textSize="23dp"
+            android:textSize="19sp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:hint="비밀번호"
+            android:hint="password"
+            android:textColorHint="#808285"
             android:inputType="text"
             android:password="true"
             android:maxLength="15"
@@ -50,30 +64,45 @@
             />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/check_sign_in"
+        android:layout_width="354.5dp"
+        android:layout_height="59dp"
         android:layout_gravity="center"
+        android:src="@drawable/btn_login"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="20dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         >
 
-        <Button
-            android:id="@+id/check_sign_in"
+        <TextView
+            android:id="@+id/tv_findPW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="로그인" />
+            android:text="비빌번호 찾기"
+            android:textColor="#717272"
+            android:textSize="19sp" />
+
+
+        <ImageView
+            android:layout_width="2.5dp"
+            android:layout_height="28.5dp"
+            android:src="@drawable/line_vertical"
+            />
 
         <TextView
             android:id="@+id/tv_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="9dp"
-            android:text="처음 이신가요?"
-            android:textColor="#000"
-            android:textSize="14dp" />
+            android:text="회원가입"
+            android:textColor="#717272"
+            android:textSize="19sp" />
+
 
 
     </LinearLayout>
