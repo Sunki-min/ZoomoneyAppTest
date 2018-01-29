@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputFilter;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import puzzle.zoomoneyapptest.Data.Data;
@@ -27,7 +27,7 @@ public class SignInActivity extends AppCompatActivity {
                 new InputFilter.LengthFilter(11)
         };
 
-        Button check_sign_in = (Button)findViewById(R.id.check_sign_in);
+        ImageButton check_sign_in = (ImageButton)findViewById(R.id.check_sign_in);
         check_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

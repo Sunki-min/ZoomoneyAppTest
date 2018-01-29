@@ -4,83 +4,213 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="puzzle.zoomoneyapptest.SignUpActivity"
     android:orientation="vertical"
-    >
+    tools:context="puzzle.zoomoneyapptest.SignUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_gravity="center"
         >
 
-        <TextView
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="아이디"
-            android:textSize="18dp"
-            />
+            >
+
+            <ImageView
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="54.5dp"
+                android:src="@drawable/rounded_rectangle_orange" />
+
+            <ImageButton
+                android:layout_width="14dp"
+                android:layout_height="22.5dp"
+                android:layout_alignBottom="@+id/toolbar"
+                android:layout_alignLeft="@id/toolbar"
+                android:layout_alignRight="@id/toolbar"
+                android:layout_alignTop="@id/toolbar"
+                android:gravity="center"
+                android:src="@drawable/back" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/et_id_sign_up"
-            android:layout_width="290dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:hint="전화번호를 입력해주세요"
+            android:hint="전화번호 입력"
             android:inputType="number"
-            />
+            android:textColorHint="#a7a9ac" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_auth"
+                android:layout_width="124dp"
+                android:layout_height="44.5dp"
+                android:src="@drawable/rectangle_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_auth"
+                android:layout_alignLeft="@id/btn_auth"
+                android:layout_alignRight="@id/btn_auth"
+                android:layout_alignTop="@id/btn_auth"
+                android:gravity="center"
+                android:text="인증번호 요청" />
+        </RelativeLayout>
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="인증번호 입력"
+            android:inputType="number"
+            android:textColorHint="#a7a9ac" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_auth_check"
+                android:layout_width="124dp"
+                android:layout_height="44.5dp"
+                android:src="@drawable/rectangle_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_auth_check"
+                android:layout_alignLeft="@id/btn_auth_check"
+                android:layout_alignRight="@id/btn_auth_check"
+                android:layout_alignTop="@id/btn_auth_check"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="@color/orange" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        >
-
-        <TextView
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:text="비밀번호"
-            android:textSize="18dp"
-            />
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/et_pw_sign_up"
-            android:layout_width="290dp"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:hint="비밀번호를 입력해주세요 (최소 8자리)"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_pw_sign_in_check"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="비밀번호 확인" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-mail"
-            />
+            android:text="이용약관 동의"
+            android:textColor="#58595b"
+            android:textSize="19sp" />
 
-        <EditText
-            android:id="@+id/et_email_sign_up"
-            android:layout_width="290dp"
+        <CheckBox
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="이메일을 입력해주세요"
-            />
+            android:layout_marginLeft="230dp" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_check_sign_up"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보 수집이용 동의"
+            android:textColor="#58595b"
+            android:textSize="19sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="계정 만들기"
         android:layout_gravity="center"
-        />
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/btn_signIn_check"
+            android:layout_width="344dp"
+            android:layout_height="59dp"
+            android:src="@drawable/rounded_rectangle_orange"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_signIn_check"
+            android:layout_alignLeft="@id/btn_signIn_check"
+            android:layout_alignRight="@id/btn_signIn_check"
+            android:layout_alignTop="@id/btn_signIn_check"
+            android:gravity="center"
+            android:text="완료"
+            android:textColor="#ffff" />
+
+
+    </RelativeLayout>
+
 
 </LinearLayout>

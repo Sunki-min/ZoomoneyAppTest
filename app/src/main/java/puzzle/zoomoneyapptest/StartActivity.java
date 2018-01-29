@@ -20,7 +20,7 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(i);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
-        }, 2200);
+        }, 2000);
 
     }
 }

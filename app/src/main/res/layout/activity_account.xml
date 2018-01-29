@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="puzzle.zoomoneyapptest.AccountActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg_pink"
     >
 
     <TextView

@@ -7,11 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class SignUpActivity extends AppCompatActivity {
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        
 
         Button btn_check_sign_up = (Button)findViewById(R.id.btn_check_sign_up);
         btn_check_sign_up.setOnClickListener(new View.OnClickListener() {
