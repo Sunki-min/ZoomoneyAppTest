@@ -8,9 +8,8 @@
     tools:context="puzzle.zoomoneyapptest.SignUpActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         >
 
         <FrameLayout
@@ -25,14 +24,24 @@
                 android:src="@drawable/rounded_rectangle_orange" />
 
             <ImageButton
-                android:layout_width="14dp"
-                android:layout_height="22.5dp"
+                android:layout_width="22dp"
+                android:layout_height="32.5dp"
                 android:layout_alignBottom="@+id/toolbar"
                 android:layout_alignLeft="@id/toolbar"
                 android:layout_alignRight="@id/toolbar"
                 android:layout_alignTop="@id/toolbar"
-                android:gravity="center"
-                android:src="@drawable/back" />
+                android:src="@drawable/back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:layout_gravity="center"
+                android:textSize="19sp"
+                />
 
         </FrameLayout>
     </LinearLayout>
@@ -190,7 +199,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="60dp">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/btn_signIn_check"
             android:layout_width="344dp"
             android:layout_height="59dp"

@@ -2,31 +2,40 @@ package puzzle.zoomoneyapptest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
-
-import puzzle.zoomoneyapptest.Data.Data;
 
 public class AccountActivity extends AppCompatActivity {
 
     private TextView tv_account;
-    String string;
+    private SwipeRefreshLayout mSwipeRefresh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        TextView tv_account = (TextView)findViewById(R.id.tv_account);
+        mSwipeRefresh = (SwipeRefreshLayout)findViewById(R.id.swipeRefreshLayout);
 
-        Intent intent = getIntent();
-        Data data_id = (Data) intent.getSerializableExtra("ID");
+        mSwipeRefresh.setColorSchemeColors(R.color.colorPrimary, R.color.colorAccent);
+        mSwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mSwipeRefresh.setRefreshing(false);
+            }
+        });
 
-        tv_account.setText(""+ data_id.input_first);
+//        TextView userID = (TextView)findViewById(R.id.userID);
+//
+//        Intent intent = getIntent();
+//        Data data_id = (Data) intent.getSerializableExtra("ID");
+//
+//        userID.setText(""+ data_id.input_first);
 
-        Button btn_check_account = (Button)findViewById(R.id.btn_check_account);
+        ImageButton btn_check_account = (ImageButton)findViewById(R.id.btn_check_account);
         btn_check_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +44,7 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
+
+
 }
