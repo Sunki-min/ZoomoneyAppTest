@@ -83,6 +83,20 @@
                     android:layout_marginTop="40dp"
                     android:src="@drawable/circle_half" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_account"
+                    android:layout_alignLeft="@id/circle_account"
+                    android:layout_alignRight="@id/circle_account"
+                    android:layout_alignTop="@id/circle_account"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="270,000"
+                    android:textColor="#000000"
+                    android:textSize="21sp" />
+
 
             </FrameLayout>
         </RelativeLayout>
@@ -156,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
-                android:text="500원"
+                android:text="1,300원"
                 android:textColor="#363636" />
 
         </LinearLayout>
@@ -167,6 +181,7 @@
     </LinearLayout>
 
     <!-- 저금 내역 생성 vertical-->
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -194,30 +209,144 @@
                 android:textColor="#363636" />
         </LinearLayout>
 
-        <!-- 상세 내역 생성 horizontal-->
-        <RelativeLayout
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" >-->
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
 
-            <android.support.v4.widget.SwipeRefreshLayout
-                android:id="@+id/swipeRefreshLayout"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018-02-04"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="인터넷 진흥원"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1,300"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018-02-04"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="GS 편의점"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2,100"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018-01-31"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="투썸 플레이스"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="300"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-01-15"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="경찰병원 역"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="700"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+            </LinearLayout>
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
 
 
-                    <ListView
-                        android:id="@+id/listview"
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:drawSelectorOnTop="false">
-
-                    </ListView>
-
-                    <!-- 상세 내역 종료 horizontal-->
-            </android.support.v4.widget.SwipeRefreshLayout>
             <!-- 저금 내역 종료 vertical-->
-        </RelativeLayout>
-    </LinearLayout>
+        </LinearLayout>
+
 
 
     <!-- 버튼 생성 -->

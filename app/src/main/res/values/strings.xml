@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ZoomoneyAppTest</string>
+    <string name="one">2018-02-05      KSIA      1300원</string>
+    <string name="two">2018-02-04      GS 편의점      700원</string>
+    <string name="three">2018-01-31      CU 편의점      2100원</string>
+    <string name="four">2018-01-25      GS 편의점      1300원</string>
 </resources>
