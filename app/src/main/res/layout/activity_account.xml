@@ -230,7 +230,7 @@
                     android:layout_height="wrap_content"
                     android:text="2018-02-04"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -238,15 +238,15 @@
                     android:layout_marginLeft="10dp"
                     android:text="인터넷 진흥원"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="1,300"
+                    android:text="\1,300"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -261,7 +261,7 @@
                     android:layout_height="wrap_content"
                     android:text="2018-02-04"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -269,15 +269,15 @@
                     android:layout_marginLeft="10dp"
                     android:text="GS 편의점"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="2,100"
+                    android:text="\2,100"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -292,7 +292,7 @@
                     android:layout_height="wrap_content"
                     android:text="2018-01-31"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -300,15 +300,15 @@
                     android:layout_marginLeft="10dp"
                     android:text="투썸 플레이스"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="300"
+                    android:text="\300"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -323,7 +323,7 @@
                     android:layout_height="wrap_content"
                     android:text="2018-01-15"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -331,15 +331,15 @@
                     android:layout_marginLeft="10dp"
                     android:text="경찰병원 역"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="700"
+                    android:text="\700"
                     android:textColor="#000"
-                    android:textSize="21sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         <!--</android.support.v4.widget.SwipeRefreshLayout>-->
 
