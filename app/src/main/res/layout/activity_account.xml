@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
-                android:text="1,500원"
+                android:text="134,650원"
                 android:textColor="#363636" />
 
 
@@ -145,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:text="총 사용 금액"
+                    android:text="저금 금액"
                     android:textColor="#363636" />
 
             </LinearLayout>
@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
-                android:text="700원"
+                android:text="500원"
                 android:textColor="#363636" />
 
         </LinearLayout>
@@ -167,42 +167,6 @@
     </LinearLayout>
 
     <!-- 저금 내역 생성 vertical-->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/circle_account"
-            android:layout_alignLeft="@id/circle_account"
-            android:layout_alignRight="@id/circle_account"
-            android:layout_alignTop="@id/circle_account"
-            android:text="저금 금액"
-            android:textColor="#363636"
-            android:textSize="12sp"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_savingMoney"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/circle_account"
-            android:layout_alignLeft="@id/circle_account"
-            android:layout_alignRight="@id/circle_account"
-            android:layout_alignTop="@id/circle_account"
-            android:gravity="center"
-            android:text="500원"
-            android:textColor="#363636"
-            android:textSize="26sp"
-
-            />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -240,13 +204,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <android.support.v7.app.AlertController.RecycleListView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:fillViewport="true"
-                    android:scrollbars="none"
-                    android:visibility="visible">
 
                     <ListView
                         android:id="@+id/listview"
@@ -257,7 +214,6 @@
                     </ListView>
 
                     <!-- 상세 내역 종료 horizontal-->
-                </android.support.v7.app.AlertController.RecycleListView>
             </android.support.v4.widget.SwipeRefreshLayout>
             <!-- 저금 내역 종료 vertical-->
         </RelativeLayout>

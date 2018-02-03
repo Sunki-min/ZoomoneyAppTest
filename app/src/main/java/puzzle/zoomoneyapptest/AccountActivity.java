@@ -20,7 +20,6 @@ public class AccountActivity extends AppCompatActivity {
 
         mSwipeRefresh = (SwipeRefreshLayout)findViewById(R.id.swipeRefreshLayout);
 
-        mSwipeRefresh.setColorSchemeColors(R.color.colorPrimary, R.color.colorAccent);
         mSwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
